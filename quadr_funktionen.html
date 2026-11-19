@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Quadratische Funktionen</title>
+<script type="text/javascript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #BeginEditable "doctitle" -->
+<!-- #EndEditable -->
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	width: 827px;
+	color: #0000FF;
+}
+</style>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/button8.jpg',/*url*/'images/button9.jpg',/*url*/'images/button10.jpg',/*url*/'images/button11.jpg',/*url*/'images/button27.jpg',/*url*/'images/button28.jpg',/*url*/'images/button29.jpg',/*url*/'images/button1A1.jpg',/*url*/'images/button1C1.jpg',/*url*/'images/button1D1.jpg',/*url*/'images/button1F1.jpg',/*url*/'images/button30.jpg',/*url*/'images/button31.jpg',/*url*/'images/button32.jpg',/*url*/'images/link/button127.jpg',/*url*/'images/link/button128.jpg',/*url*/'images/arslb/button133.jpg',/*url*/'images/arslb/button134.jpg',/*url*/'images/arslb/button96.jpg',/*url*/'images/arslb/button97.jpg',/*url*/'images/link/button9C.jpg',/*url*/'images/link/button9D.jpg',/*url*/'images/button1BA1.jpg',/*url*/'images/button1BB2.jpg',/*url*/'images/arslb/button1C22.jpg',/*url*/'images/arslb/button1C23.jpg',/*url*/'images/lernmaterial/mathematik/button116.jpg',/*url*/'images/lernmaterial/mathematik/button117.jpg',/*url*/'images/lernmaterial/mathematik/button11C.jpg',/*url*/'images/lernmaterial/mathematik/button11D.jpg',/*url*/'images/lernmaterial/mathematik/button11F.jpg',/*url*/'images/lernmaterial/mathematik/button120.jpg',/*url*/'images/lernmaterial/mathematik/button122.jpg',/*url*/'images/lernmaterial/mathematik/button123.jpg',/*url*/'images/lernmaterial/mathematik/button125.jpg',/*url*/'images/lernmaterial/mathematik/button126.jpg',/*url*/'images/lernmaterial/mathematik/button128.jpg',/*url*/'images/lernmaterial/mathematik/button129.jpg')" style="width: 830px; background-image: url('images/euler005.gif');">
+
+<table id="table1" style="width: 67%">
+	<tr>
+		<td><a href="index.html">
+		<img id="img1" alt="Home" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Home" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/link/button128.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/link/button126.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/link/button127.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/link/button127.jpg')" src="images/link/button126.jpg" style="border: 0" width="100"></a></td>
+		<td>
+		<a href="geschichte.html">
+		<img id="img13" alt="Geschichte" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Geschichte" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img13',/*url*/'images/arslb/button97.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img13',/*url*/'images/arslb/button95.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img13',/*url*/'images/arslb/button96.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img13',/*url*/'images/arslb/button96.jpg')" src="images/arslb/button95.jpg" style="border: 0" width="100"></a></td>
+		<td>
+		<a href="lernmaterial.html">
+		<img id="img5" alt="Lernmaterial" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Lernmaterial" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/arslb/button134.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/arslb/button132.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/arslb/button133.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/arslb/button133.jpg')" src="images/arslb/button132.jpg" style="border: 0" width="100"></a></td>
+		<td>
+		<a href="linkliste.html">
+		<img id="img14" alt="Linkliste" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Linkliste" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img14',/*url*/'images/link/button9D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img14',/*url*/'images/link/button98.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img14',/*url*/'images/link/button9C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img14',/*url*/'images/link/button9C.jpg')" src="images/link/button98.jpg" style="border: 0" width="100"></a></td>
+		<td>
+		<a href="mathematik.html">
+		<img id="img16" alt="Mathematik" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Mathematik" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img16',/*url*/'images/button1BB2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img16',/*url*/'images/button1B20.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img16',/*url*/'images/button1BA1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img16',/*url*/'images/button1BA1.jpg')" src="images/button1B20.jpg" style="border: 0" width="100"></a></td>
+		<td>
+		<a href="physik.html">
+		<img id="img18" alt="Physik" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="Physik" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img18',/*url*/'images/arslb/button1C23.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img18',/*url*/'images/arslb/button1BF3.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img18',/*url*/'images/arslb/button1C22.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img18',/*url*/'images/arslb/button1C22.jpg')" src="images/arslb/button1BF3.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+</table>
+
+<p class="auto-style1">Quadratische Funktionen</p>
+<table id="table2" style="width: 17%">
+	<tr>
+		<td><a href="lernmateriel_mathematik.html">
+		<img id="img19" alt="nach oben" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9" fp-title="nach oben" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img19',/*url*/'images/lernmaterial/mathematik/button117.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img19',/*url*/'images/lernmaterial/mathematik/button115.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img19',/*url*/'images/lernmaterial/mathematik/button116.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img19',/*url*/'images/lernmaterial/mathematik/button116.jpg')" src="images/lernmaterial/mathematik/button115.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="quadrfunktionen_seite1.html">
+		<img id="img20" alt="Seite 1" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9; fp-justify-horiz: 0" fp-title="Seite 1" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img20',/*url*/'images/lernmaterial/mathematik/button11D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img20',/*url*/'images/lernmaterial/mathematik/button11B.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img20',/*url*/'images/lernmaterial/mathematik/button11C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img20',/*url*/'images/lernmaterial/mathematik/button11C.jpg')" src="images/lernmaterial/mathematik/button11B.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="quadrfunktionen_seite2.html">
+		<img id="img21" alt="Seite 2" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9; fp-justify-horiz: 0" fp-title="Seite 2" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img21',/*url*/'images/lernmaterial/mathematik/button120.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img21',/*url*/'images/lernmaterial/mathematik/button11E.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img21',/*url*/'images/lernmaterial/mathematik/button11F.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img21',/*url*/'images/lernmaterial/mathematik/button11F.jpg')" src="images/lernmaterial/mathematik/button11E.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="quadrfunktionen_seite3.html">
+		<img id="img22" alt="Seite 3" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9; fp-justify-horiz: 0" fp-title="Seite 3" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img22',/*url*/'images/lernmaterial/mathematik/button123.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'images/lernmaterial/mathematik/button121.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img22',/*url*/'images/lernmaterial/mathematik/button122.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'images/lernmaterial/mathematik/button122.jpg')" src="images/lernmaterial/mathematik/button121.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="quadrfunktionen_seite4.html">
+		<img id="img23" alt="Seite 4" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9; fp-justify-horiz: 0" fp-title="Seite 4" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img23',/*url*/'images/lernmaterial/mathematik/button126.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img23',/*url*/'images/lernmaterial/mathematik/button124.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img23',/*url*/'images/lernmaterial/mathematik/button125.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img23',/*url*/'images/lernmaterial/mathematik/button125.jpg')" src="images/lernmaterial/mathematik/button124.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="quadrfunktionen_seite5.html">
+		<img id="img24" alt="Seite 5" fp-style="fp-btn: Embossed Rectangle 1; fp-font-size: 9; fp-justify-horiz: 0" fp-title="Seite 5" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img24',/*url*/'images/lernmaterial/mathematik/button129.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'images/lernmaterial/mathematik/button127.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img24',/*url*/'images/lernmaterial/mathematik/button128.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'images/lernmaterial/mathematik/button128.jpg')" src="images/lernmaterial/mathematik/button127.jpg" style="border: 0" width="100"></a></td>
+	</tr>
+	</table>
+
+</body>
+
+</html>
